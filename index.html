@@ -15,6 +15,14 @@
             border-radius: 50%;
         }
 
+        /*section:hover {*/
+        /*    !*width: 400px;*!*/
+        /*    !*height: 300px;*!*/
+        /*    !*transition-property:width,height;*!*/
+        /*    !*transition-duration: 15s;*!*/
+        /*    transition:all 5s;*/
+        /*    transform:translateZ(500px);*/
+        /*}*/
         section > span:nth-child(1) {
             position: absolute;
             left: 13px;
@@ -33,6 +41,9 @@
             position: absolute;
             top: 25px;
             left: 25px;
+            animation-name: testOne;
+            animation-duration: 5s;
+            animation-iteration-count:1;
         }
 
         section > span:nth-child(3) {
@@ -43,6 +54,10 @@
             position: absolute;
             top: 25px;
             left: 25px;
+            animation-name: testOne;
+            animation-duration: 10s;
+            animation-iteration-count:1;
+
         }
 
         section > span:nth-child(4) {
@@ -53,6 +68,9 @@
             position: absolute;
             top: 25px;
             left: 25px;
+            animation-name: testOne;
+            animation-duration: 20s;
+            animation-iteration-count:1;
         }
 
         section > span:nth-child(2) > p {
@@ -74,6 +92,13 @@
             top: 1px;
             left: 20px;
             color: white;
+        }
+
+        @keyframes testOne {
+            from {
+                transform: translateY(300px);
+            }
+
         }
 
     </style>
